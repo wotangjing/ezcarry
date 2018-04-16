@@ -1,0 +1,23 @@
+<!--pages/OceanList/OceanList.wxml-->
+<view class='container'>
+  <!--view class='header'>船公司 起始港 目的港 20GP/40GP/40HQ  </view-->
+  <view class='list'>
+
+    <block wx:for="{{dataList}}" wx:key="unique">
+      <navigator url="../OceanDetail/OceanDetail?OceanFreightId={{item.OceanFreightId}}">
+        <view class='listItem'>
+          <image src="{{Domain}}{{item.SortName}}.png" class='shipcompany'></image>
+          <view class='port'>
+          <text wx:if="{{item.LoadingPortTerminalName}}">{{item.LoadingPortTerminalName}}</text>
+          <text wx:else> {{item.LoadingPortName}} </text> -
+          <text wx:if="{{item.DischargePortTerminalName}}">{{item.DischargePortTerminalName}}</text>
+          <text wx:else> {{item.DischargePortName}} </text>
+          </view>
+          <text class='price'>{{item.Ctn20}}/{{item.Ctn40}}/{{item.Ctn40Hq}}</text>
+        </view>
+        <view  class='time'>{{item.SailingStr}}|({{item.BeginDateStr}}-{{item.ExpiredDateStr}})|{{item.Days}}天</view>
+      </navigator>
+    </block>
+
+  </view>
+</view>

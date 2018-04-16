@@ -1,0 +1,5 @@
+/**index.wxss**/
+.home
+{
+  height:1000rpx
+}

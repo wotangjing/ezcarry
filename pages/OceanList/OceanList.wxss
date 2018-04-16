@@ -1,0 +1,45 @@
+/* pages/OceanList/OceanList.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  background-color: aquamarine;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border:1rpx #ccc solid;
+  margin-top: 5rpx;
+}
+
+.listItem {
+  display: flex;
+  flex-wrap:wrap;  
+  align-items: center;
+}
+
+.listItem .shipcompany {
+  height: 80rpx;
+  width: 80rpx;
+  margin-right: 10rpx;
+}
+.listItem .port {  
+  width: 50%;
+  font-size: 0.9em;
+}
+.listItem .price {
+  margin-left: 10rpx;
+  font-size: 0.8em;
+  color: orange;
+}
+
+.time {
+  font-size: 0.8em;
+   border-bottom:1rpx #ccc solid;
+}
+

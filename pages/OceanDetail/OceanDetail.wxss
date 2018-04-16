@@ -1,0 +1,19 @@
+/* pages/OceanDetail/OceanDetail.wxss */
+@import "../OceanList/OceanList.wxss";
+
+.baseItem
+{
+  border: 2rpx solid #ccc;
+  margin-top: 10rpx;
+  
+}
+.itemTile{
+  font-weight: bolder;
+  margin: 10rpx;
+  font-size: 1.1em;
+}
+.itemTwo{
+  width:50%;
+  display: flex;
+  
+}

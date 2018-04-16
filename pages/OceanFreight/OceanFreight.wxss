@@ -1,0 +1,10 @@
+/* pages/OceanFreight/OceanFreight.wxss */
+
+.wrap
+{
+  padding: 5rpx;
+}
+.wrap input{
+  margin-bottom: 20rpx;
+  border: 1px solid gainsboro;
+}

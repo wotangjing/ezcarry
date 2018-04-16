@@ -1,0 +1,54 @@
+<!--pages/OceanDetail/OceanDetail.wxml-->
+<view>
+
+  <view class='listItem'>
+    <image src="{{Domain}}{{detailItem.SortName}}.png" class='shipcompany'></image>
+    <view class='port'>
+      <text wx:if="{{detailItem.LoadingPortTerminalName}}">{{detailItem.LoadingPortTerminalName}}</text>
+      <text wx:else> {{detailItem.LoadingPortName}} </text> -
+      <text wx:if="{{detailItem.DischargePortTerminalName}}">{{detailItem.DischargePortTerminalName}}</text>
+      <text wx:else> {{detailItem.DischargePortName}} </text>
+    </view>
+    <text class='price'>{{detailItem.Ctn20}}/{{detailItem.Ctn40}}/{{detailItem.Ctn40Hq}}</text>
+  </view>
+  <view class='time'>{{detailItem.SailingStr}}|({{detailItem.BeginDateStr}}-{{detailItem.ExpiredDateStr}})|{{detailItem.Days}}天</view>
+
+  <view class='baseItem'>
+    <view class='itemTile'>基本信息</view>
+    <view style='display:flex'>
+      <view class='itemTwo'>起运港:{{detailItem.LoadingPortCode }}
+      </view>
+      <view class='itemTwo'>目的港:{{detailItem.DischargePortCode }}
+      </view>
+    </view>
+    <view>有效日期:2018/{{detailItem.BeginDateStr}}-2018/{{detailItem.ExpiredDateStr}}</view>
+  </view>
+  <view class='baseItem'>
+    <view class='itemTile'>服务</view>
+  </view>
+
+  <view class='baseItem'>
+    <view class='itemTile'>其他参考</view>
+    <view>
+      {{detailItem.BookingAgentName }} {{detailItem.OceanFreightId }} {{detailItem.LoadingPortCode }} {{detailItem.TranshipPortCode1 }} {{detailItem.TranshipPortCode2 }} {{detailItem.DischargePortCode }} {{detailItem.VesselName }} {{detailItem.VesselNameLang
+      }} {{detailItem.Voyage }} {{detailItem.Sailing }} {{detailItem.SailingStr }} {{detailItem.Days }} {{detailItem.ShippingLineId }} {{detailItem.Seq }} {{detailItem.Ctn20 }} {{detailItem.Ctn40 }} {{detailItem.Ctn40Hq }} {{detailItem.Ctn45Hq }} {{detailItem.MaxWeight20
+      }} {{detailItem.MaxWeight40 }} {{detailItem.BeginDate }} {{detailItem.ExpiredDate }} {{detailItem.IssueUserId }} {{detailItem.IssueCompanyId }} {{detailItem.BookingAgentId }} {{detailItem.CabinSeatStatue }} {{detailItem.MergerCabinSw }} {{detailItem.MergerCabinRemark
+      }} {{detailItem.PaymentType }} {{detailItem.DealsSw }} {{detailItem.Remark }} {{detailItem.RemarkLang }} {{detailItem.CreateDate }} {{detailItem.ClientOceanFreightId }} {{detailItem.ClientUploadDate }} {{detailItem.ClientUploadBy }} {{detailItem.DischargePortTerminal
+      }} {{detailItem.LineCode }} {{detailItem.LoadingPortTerminal }} {{detailItem.ShippingLine }} {{detailItem.ServiceType }} {{detailItem.BlType }} {{detailItem.Sail }} {{detailItem.ExpiredDateNear }} {{detailItem.SeqStr }} {{detailItem.SeqStr16 }}
+      {{detailItem.ShippingLineCode }} {{detailItem.Currency }} {{detailItem.LoadingPortName }} {{detailItem.DischargePortName }} {{detailItem.TranshipPortName1 }} {{detailItem.TranshipPortName2 }} {{detailItem.OecanCarrierCode }} {{detailItem.OecanCarrierName
+      }} {{detailItem.OecanCarrierNameLang }} {{detailItem.SortName }} {{detailItem.ShippingLineName }} {{detailItem.CompanyName }} {{detailItem.CompanyId }} {{detailItem.OecanCarrierId }} {{detailItem.ServiceTypeAdjuestList }} {{detailItem.SurchargeList
+      }} {{detailItem.SurchargeIsExit }} {{detailItem.IsSync }} {{detailItem.DischargePortTerminalName }} {{detailItem.DischargePortTerminalNameLang }} {{detailItem.LoadingPortTerminalName }} {{detailItem.LoadingPortTerminalNameLang }} {{detailItem.CutsomerServiceQq1
+      }} {{detailItem.CutsomerServiceQq2 }} {{detailItem.CutsomerServiceSkype1 }} {{detailItem.CutsomerServiceSkype2 }} {{detailItem.FreightOverSeed }} {{detailItem.ApplySuccessBl }} {{detailItem.Symbol }} {{detailItem.C1 }} {{detailItem.C2 }} {{detailItem.C3
+      }} {{detailItem.C4 }} {{detailItem.C5 }} {{detailItem.AlreadyUpload }} {{detailItem.companyCode }} {{detailItem.SortWeight }} {{detailItem.MaxCtn20 }} {{detailItem.MaxCtn40 }} {{detailItem.MaxCtn40Hq }} {{detailItem.MaxCtn45Hq }} {{detailItem.IsFavourable
+      }} {{detailItem.CompanyBookingStatistics }} {{detailItem.OceanFreightBookingStatistics }} {{detailItem.ShipPosition }} {{detailItem.client_ocean_freight_id }} {{detailItem.client_upload_date }} {{detailItem.client_upload_by }} {{detailItem.UserName
+      }} {{detailItem.ShipPositionName }} {{detailItem.country_name }} {{detailItem.country_name_lang }} {{detailItem.telphone1 }} {{detailItem.telphone2 }} {{detailItem.Ctn20Int }} {{detailItem.Ctn40Int }} {{detailItem.Ctn40HqInt }} {{detailItem.Ctn45HqInt
+      }} {{detailItem.OceanFreightCalendarCalculate }} {{detailItem.SubsidyVoucher }} {{detailItem.VoucherByType }} {{detailItem.CashSubsidy }} {{detailItem.CashSubsidyType }} {{detailItem.IsFollow }} {{detailItem.IsMultiplePrice }} {{detailItem.Grade
+      }} {{detailItem.DisplayName }} {{detailItem.CompanyShow }} {{detailItem.cutsomer_service_id1 }} {{detailItem.cutsomer_service_id2 }} {{detailItem.Etd }} {{detailItem.Eta }} {{detailItem.BeginDateStr }} {{detailItem.ExpiredDateStr }} {{detailItem.ClientUploadDateStr
+      }} {{detailItem.IsWarranty }} {{detailItem.DisplayCarrierSw }} {{detailItem.DisplaySupplierSw }}
+    </view>
+
+
+
+  </view>
+
+</view>

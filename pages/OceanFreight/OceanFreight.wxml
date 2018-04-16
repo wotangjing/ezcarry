@@ -1,0 +1,12 @@
+<!--pages/OceanFreight/OceanFreight.wxml-->
+<view class='container'>
+  <view class='wrap'>
+    <form bindsubmit="formSubmit">
+      <input placeholder='起运港' name='load' value='Shanghai'></input>
+      <input placeholder='目的港' name='discharge' value='Bluff'></input>
+      <input placeholder='船公司' name='shippingLineName'></input>
+      <input placeholder='船期' name='oecanCarrierName'></input>
+      <button formType="submit" type="primary">一键查询</button>
+    </form>
+  </view>
+</view>

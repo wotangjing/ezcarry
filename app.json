@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/OceanFreight/OceanFreight",
+    "pages/OceanDetail/OceanDetail",
+    "pages/news/news",
+    "pages/more/more",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/OceanList/OceanList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "掠食龙小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index/index.png",
+        "selectedIconPath": "images/index/index@active.png"
+      },
+      {
+        "pagePath": "pages/OceanFreight/OceanFreight",
+        "text": "海运",
+        "iconPath": "images/index/ocean.png",
+        "selectedIconPath": "images/index/ocean@active.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "images/index/news.png",
+        "selectedIconPath": "images/index/news@active.png"
+      }
+    ]
+  }
+}

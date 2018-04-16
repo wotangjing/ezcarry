@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+ <image src='../../images/home.png' class='home' bind:tap="tapHome"></image>
+</view>
